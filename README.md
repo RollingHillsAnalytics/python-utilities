@@ -8,7 +8,7 @@ This module can be used to display a nicely formatted message showing the elapse
 A common use is to display the execution time of a program or process.
 
 For example:
-
+'''
 from timeit import default_timer as timer
 from displayduration import DisplayDuration
 
@@ -19,6 +19,6 @@ starttime = timer()
 endtime = timer()
 
 DisplayDuration(starttime, endtime)
-
+'''
 
 
