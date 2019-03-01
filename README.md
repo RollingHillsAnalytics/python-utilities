@@ -10,7 +10,7 @@ A common use is to display the execution time of a program or process.
 For example:
 ```python
 from timeit import default_timer as Timer
-from python_utilities import DisplayDuration as Duration
+from python_utilities import DisplayDuration
 
 starttime = Timer()
 ...
@@ -18,7 +18,7 @@ starttime = Timer()
 ...
 endtime = Timer()
 
-Duration(starttime, endtime)
+DisplayDuration(starttime, endtime)
 ```
 
 
