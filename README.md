@@ -9,16 +9,16 @@ A common use is to display the execution time of a program or process.
 
 For example:
 ```python
-from timeit import default_timer as timer
-from displayduration import DisplayDuration
+from timeit import default_timer as Timer
+from displayduration import DisplayDuration as Duration
 
-starttime = timer()
+starttime = Timer()
 ...
 <some processing>
 ...
-endtime = timer()
+endtime = Timer()
 
-DisplayDuration(starttime, endtime)
+Duration(starttime, endtime)
 ```
 
 
