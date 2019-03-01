@@ -1,8 +1,8 @@
 # python_utilities
-Set of various Python utilities to be used in other scripts and projects.
+Set of various Python utilities to be used in scripts and projects.
 
 
-displayduration
+## DisplayDuration
 
 This module can be used to display a nicely formatted message showing the elapsed time between two events.
 A common use is to display the execution time of a program or process.
@@ -10,7 +10,7 @@ A common use is to display the execution time of a program or process.
 For example:
 ```python
 from timeit import default_timer as Timer
-from displayduration import DisplayDuration as Duration
+from python_utilities import DisplayDuration
 
 starttime = Timer()
 ...
@@ -18,7 +18,7 @@ starttime = Timer()
 ...
 endtime = Timer()
 
-Duration(starttime, endtime)
+DisplayDuration(starttime, endtime)
 ```
 
 
